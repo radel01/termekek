@@ -64,6 +64,7 @@ vasarol();
 const gombElem= document.getElementById("feladat_4");
 gombElem.innerHTML="<input type='button' value='Töröl'>"
 
+
 gombElem.addEventListener("click", torolEsemeny);
 
 function torolEsemeny() {
@@ -72,4 +73,7 @@ function torolEsemeny() {
   }
   vasarolt.pop()
   VASAROL.innerHTML = `${vasarolt} `;
+
+  gombElem.innerHTML="<input type='button' value='Töröl'><p id='torles'>Sikeres törlés!</p>"
+
 }
